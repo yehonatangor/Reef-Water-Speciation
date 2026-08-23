@@ -14,8 +14,7 @@ $$[\mathrm{H^+}]_{\mathrm{SWS}} = [\mathrm{H^+}] + [\mathrm{HSO_4^-}] + [\mathrm
 
 A fourth, the NBS scale, is defined operationally by NIST buffers of ionic strength $\approx 0.1$ and reports an activity of:
 
-$$\mathrm{pH_{NBS}} = -\log_{10} a_{\mathrm{H^+}}
-= -\log_{10}\!\left(f_H\,[\mathrm{H^+}]_{\mathrm{SWS}}\right)$$
+$$\mathrm{pH_{NBS}} = -\log_{10} a_{\mathrm{H^+}} = -\log_{10}\!\left(f_H\,[\mathrm{H^+}]_{\mathrm{SWS}}\right)$$
 
 ### Justification for choosing Total
 
