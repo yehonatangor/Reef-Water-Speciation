@@ -2,7 +2,7 @@
 
 ## The Dickson (1981) proton condition
 
-Alkalinity is the proton deficit relative to a defined zero level of protons. Dickson's criterion: species formed from acids with $K > 10^{-4.5}$ at $S=35$, $t = 25^\circ{C}$ are assigned to the donor (protonated) side.
+Alkalinity is the proton deficit relative to a defined zero level of protons. Dickson's criterion: species formed from acids with $K > 10^{-4.5}$ at $S=35$, $t = 25^\circ\mathrm{C}$ are assigned to the donor (protonated) side.
 
 $$\begin{aligned}
 A_T &= [\mathrm{HCO_3^-}] + 2[\mathrm{CO_3^{2-}}] + [\mathrm{B(OH)_4^-}]
@@ -16,7 +16,7 @@ Two features are routinely dropped by ad-hoc implementations and are implemented
 1. The hydrogen ion term is on the free scale, not total or SWS.
 2. The $-[\mathrm{HSO_4^-}]$ and $-[\mathrm{HF}]$ terms are present.
 
-Quantitatively, at $S=35$, $t=25\ ^\circ$C, $DIC = 2000\ \mu\mathrm{mol\,kg^{-1}}$:
+Quantitatively, at $S=35$, $t=25^\circ\mathrm{C}$, $DIC = 2000\ \mu\mathrm{mol\,kg^{-1}}$:
 
 | pH | $[\mathrm{HSO_4^-}] + [\mathrm{HF}]$ | Significance |
 |---|---|---|

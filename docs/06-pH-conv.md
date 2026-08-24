@@ -8,7 +8,7 @@ $$f_{F\to T} = 1 + \frac{S_T}{K_S}, \qquad f_{F\to SWS} = 1 + \frac{S_T}{K_S} + 
 
 $$f_{SWS\to T} = \frac{f_{F\to T}}{f_{F\to SWS}}$$
 
-At $S=35$, $t =25^\circ{C}$:
+At $S=35$, $t =25^\circ\mathrm{C}$:
 
 $$f_{F\to T} = 1.28150, \quad f_{F\to SWS} = 1.31039, \quad f_{SWS\to T} = 0.97795$$
 

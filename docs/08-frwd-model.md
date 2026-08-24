@@ -14,4 +14,4 @@ $$m_{eq} = \frac{m_0 A_T}{C_{a,\text{titratable}}}$$
 
 The titrant used by this package is $0.1\ \mathrm{mol\,kg^{-1}}$ HCl in $0.6\ \mathrm{mol\,kg^{-1}}$ NaCl. (Guide SOP 3b), for which $\bar{n} \equiv 1$ identically.
 
-Verified: for $A_T = 2300$, $DIC = 2000\ \mu\mathrm{mol\,kg^{-1}}$, $S=35$, $t=25^\circ{C}$, HCl titrant, the curve starts at pH 8.0459 (identical to the independent DIC/$A_T$ solver to $10^{-9}$), is strictly monotone, and passes through pH 4.34 at the equivalence point, inside Dickson's expected 4.5 region.
+Verified: for $A_T = 2300$, $DIC = 2000\ \mu\mathrm{mol\,kg^{-1}}$, $S=35$, $t=25^\circ\mathrm{C}$, HCl titrant, the curve starts at pH 8.0459 (identical to the independent DIC/$A_T$ solver to $10^{-9}$), is strictly monotone, and passes through pH 4.29 at the equivalence point, inside Dickson's expected 4.5 region.

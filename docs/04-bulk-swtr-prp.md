@@ -10,7 +10,7 @@ $$A = 8.24493\times10^{-1} - 4.0899\times10^{-3}t + 7.6438\times10^{-5}t^2 - 8.2
 
 $$B = -5.72466\times10^{-3} + 1.0227\times10^{-4}t - 1.6546\times10^{-6}t^2, \qquad C = 4.8314\times10^{-4}$$
 
-Valid $0 \le S \le 42$, $0 \le t \le 40\ ^\circ\mathrm{C}$. 
+Valid $0 \le S \le 42$, $0 \le t \le 40^\circ\mathrm{C}$. 
 
 Verified: 
 

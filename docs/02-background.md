@@ -60,4 +60,4 @@ The three differ by roughly 0.1 pH, about 25% in concentration, and far larger t
 
 Why was mol per kilogram chosen rather than per litre?
 
-Consider that volume changes with temperature; mass does not. A concentration in $\mathrm{mol\,L^{-1}}$ measured at $25 ^\circ\text{C}$ means something different at $10 ^\circ\text{C}$, while $\mathrm{mol\,kg^{-1}}$ is the same number everywhere. Oceanography uses $\mathrm{mol\,kg^{-1}}$ of solution for this specific reason, and so does this library.
+Consider that volume changes with temperature; mass does not. A concentration in $\mathrm{mol\,L^{-1}}$ measured at $25^\circ\mathrm{C}$ means something different at $10^\circ\mathrm{C}$, while $\mathrm{mol\,kg^{-1}}$ is the same number everywhere. Oceanography uses $\mathrm{mol\,kg^{-1}}$ of solution for this specific reason, and so does this library.

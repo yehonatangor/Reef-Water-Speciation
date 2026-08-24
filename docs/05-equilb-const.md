@@ -152,6 +152,6 @@ Verifying:
 
 $$\log_{10}K_{sp}^{\circ}(\text{arag}) - \log_{10}K_{sp}^{\circ}(\text{calc}) = -0.0385 + \frac{63.974}{T}$$
 
-At $t =25\ ^\circ\mathrm{C}$ a ratio of $1.500$, exactly the value Mucci states he constrained the fit to. Additionally $pK_{sp}$ at $S=35$, $t =25\ ^\circ\mathrm{C}$ reproduces PyCO2SYS to machine precision: calcite $6.36933$, aragonite $6.18831$.
+At $t =25^\circ\mathrm{C}$ a ratio of $1.500$, exactly the value Mucci states he constrained the fit to. Additionally $pK_{sp}$ at $S=35$, $t =25^\circ\mathrm{C}$ reproduces PyCO2SYS to machine precision: calcite $6.36933$, aragonite $6.18831$.
 
 Note: $K_{sp}$ contains no hydrogen ion and is therefore scale-independent. It is never passed through a pH scale conversion.
