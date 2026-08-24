@@ -1,0 +1,105 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cleaned-reef-water"
+version = "1.0.0"
+description = "Validated seawater carbonate chemistry, titration modelling and speciation inference for reef water"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Reef Water Cleanup project" }]
+keywords = [
+    "oceanography",
+    "carbonate system",
+    "alkalinity",
+    "titration",
+    "seawater",
+    "reef",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Typing :: Typed",
+]
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+
+[project.optional-dependencies]
+ml = ["tensorflow>=2.13"]
+notebook = ["matplotlib>=3.7", "jupyter>=1.0"]
+validate = ["PyCO2SYS>=1.8"]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "mypy>=1.8,<2.0",   # 2.3.0 raises INTERNAL ERROR on this codebase
+    "ruff>=0.3",
+    "PyCO2SYS>=1.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cleaned_reef_water = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src"]
+addopts = "--doctest-modules --strict-markers -q"
+filterwarnings = ["error::RuntimeWarning"]
+markers = [
+    # Applied automatically by conftest.py to any test module that mentions
+    # TensorFlow.  Run as `pytest -m "not tensorflow"` and `pytest -m
+    # tensorflow` so that TF and SciPy never tear down in the same process.
+    "tensorflow: needs TensorFlow; run in its own process",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+src = ["src", "tests"]
+extend-exclude = ["build", "dist", "*.egg-info"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "D", "UP", "B", "C4", "SIM", "ARG", "NPY"]
+ignore = ["D203", "D213", "E731"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D100", "D101", "D102", "D103", "ARG002"]
+# Every script puts src/ on sys.path before importing the package, so that it
+# runs from a bare checkout as well as an installed one.  The package import
+# therefore cannot be at the top of the file.  Suppressed here rather than with
+# an inline `# noqa: E402` on each line, because those markers look like
+# comments and get removed by anyone tidying comments -- which breaks the lint
+# gate for a reason that has nothing to do with the code.
+"scripts/*" = ["E402"]
+# The notebook is a figure-generating document, not library code.  It puts src/
+# on sys.path the same way the scripts do, and its cells favour readable plotting
+# over the conventions that matter in the package itself.
+"notebooks/*.ipynb" = ["E402", "E401", "E501", "I001", "D103", "B905", "C408"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.mypy]
+# Deliberately NOT pinning python_version: mypy then targets the running
+# interpreter.  Pinning it to 3.10 makes mypy analyse modern numpy stubs
+# (which use PEP 695 `type` statements) under 3.10 rules and fail inside
+# site-packages.
+strict = true
+warn_unused_ignores = false
+disallow_untyped_decorators = false
+
+[[tool.mypy.overrides]]
+module = ["scipy.*", "tensorflow.*", "PyCO2SYS.*"]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["cleaned_reef_water"]
+branch = true
