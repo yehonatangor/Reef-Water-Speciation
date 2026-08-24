@@ -1,0 +1,149 @@
+{
+  "provenance": {
+    "package_version": "1.0.0",
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "tensorflow": "2.21.0",
+    "command": "scripts/train_autoencoder.py --dataset data/dataset_hobbyist.npz --split-seed 42 --train-seed 42 --output-dir results/seed42",
+    "seeds": {
+      "split": 42,
+      "train": 42
+    },
+    "dataset": {
+      "package_version": "1.0.0",
+      "python": "3.12.10",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "numpy": "2.5.2",
+      "instrument": "hobbyist",
+      "seed": 42,
+      "n_samples": 16000,
+      "n_points": 200,
+      "add_noise": true,
+      "organic_probability": 0.5,
+      "n_failed": 0,
+      "chunk_size": 500,
+      "n_chunks": 32,
+      "command": "scripts/generate_dataset.py --instrument hobbyist --seed 42 --n-samples 16000 --chunk-size 500 --output data/dataset_hobbyist.npz --max-chunks-per-run 1"
+    }
+  },
+  "mode": "physics_constrained_autoencoder",
+  "instrument": "hobbyist",
+  "used_true_nutrients": false,
+  "loss_weights": {
+    "reconstruction": 1.0,
+    "totals": 1.0,
+    "nuisance": 1.0,
+    "species": 1.0
+  },
+  "loss_scales": {
+    "ph": 0.02,
+    "species": 2e-05,
+    "alkalinity": 0.0001,
+    "alk_minus_dic": 2e-05,
+    "total_organic": 2e-05,
+    "pk_organic": 0.5,
+    "offset": 0.05,
+    "slope": 0.03,
+    "pump_scale": 0.008
+  },
+  "epochs_run": 71,
+  "inference": {
+    "network_ms_per_curve": 2.211,
+    "classical_ms_per_curve": 1695.79,
+    "speedup": 767.0,
+    "n_timed": 10
+  },
+  "n_evaluated": 2400,
+  "metrics_umol_per_kg": {
+    "alkalinity": {
+      "bias": -1.456,
+      "sd": 35.024,
+      "mae": 24.227,
+      "median_abs": 17.864,
+      "max_abs": 492.99
+    },
+    "dic": {
+      "bias": -4.87,
+      "sd": 51.583,
+      "mae": 39.927,
+      "median_abs": 32.221,
+      "max_abs": 341.401
+    },
+    "hco3": {
+      "bias": -5.853,
+      "sd": 52.531,
+      "mae": 40.666,
+      "median_abs": 32.956,
+      "max_abs": 253.996
+    },
+    "co3": {
+      "bias": 1.208,
+      "sd": 16.009,
+      "mae": 11.632,
+      "median_abs": 8.491,
+      "max_abs": 98.109
+    },
+    "boh4": {
+      "bias": 0.542,
+      "sd": 7.541,
+      "mae": 5.985,
+      "median_abs": 5.034,
+      "max_abs": 28.235
+    }
+  },
+  "nuisance_recovery": {
+    "offset": {
+      "bias": 0.005876,
+      "sd": 0.028329,
+      "true_sd": 0.049289,
+      "recovery_ratio": 1.74
+    },
+    "slope": {
+      "bias": -0.00418,
+      "sd": 0.010422,
+      "true_sd": 0.029781,
+      "recovery_ratio": 2.857
+    },
+    "pump_scale": {
+      "bias": -0.000783,
+      "sd": 0.008056,
+      "true_sd": 0.007904,
+      "recovery_ratio": 0.981
+    },
+    "total_organic": {
+      "bias": 4e-06,
+      "sd": 4.3e-05,
+      "true_sd": 4.8e-05,
+      "recovery_ratio": 1.126
+    },
+    "pk_organic": {
+      "bias": -0.054059,
+      "sd": 0.792238,
+      "true_sd": 0.848942,
+      "recovery_ratio": 1.072
+    }
+  },
+  "joint_error_structure": {
+    "corr_dA_dC": 0.5466,
+    "sd_dA_minus_dC": 43.733,
+    "classical_reference": {
+      "corr_dA_dC": 0.933,
+      "sd_dA_minus_dC": 11.46,
+      "measured_on": "organic-free data (pre-organic dataset)",
+      "comparable": false
+    }
+  },
+  "metadata_columns": [
+    "dic",
+    "alkalinity",
+    "salinity_true",
+    "t_c_true",
+    "sample_mass_kg",
+    "total_boron",
+    "total_phosphate",
+    "total_silicate",
+    "total_organic",
+    "pk_organic"
+  ]
+}

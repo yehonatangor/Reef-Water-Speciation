@@ -1,0 +1,179 @@
+{
+  "provenance": {
+    "package_version": "1.0.0",
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "command": "scripts/information_limits.py --verify --seed 42 --output results/limits.json",
+    "n_points": 40,
+    "n_monte_carlo": 800,
+    "seed": 42
+  },
+  "optimality": {
+    "hobbyist": {
+      "crlb_umol_per_kg": 18.41,
+      "measured_umol_per_kg": 22.0,
+      "residual_noise_sd_ph": 0.03492
+    },
+    "laboratory": {
+      "crlb_umol_per_kg": 3.53,
+      "measured_umol_per_kg": 3.5,
+      "residual_noise_sd_ph": 0.00877
+    }
+  },
+  "leverage_hobbyist": {
+    "as modelled": 18.41,
+    "junction drift removed": 18.42,
+    "CO2 degassing removed": 18.38,
+    "electrode noise halved": 17.77,
+    "electrode noise removed": 5.81,
+    "burette 0.8% -> 0.4%": 9.77,
+    "burette 0.8% -> 0.1%": 4.2
+  },
+  "species_grid_hobbyist": [
+    {
+      "alkalinity_umol_per_kg": 1500,
+      "dic_over_alkalinity": 0.8,
+      "initial_ph": 8.202,
+      "alkalinity_sd": 12.1,
+      "species_sd_umol_per_kg": {
+        "hco3": 8.87,
+        "co3": 2.69,
+        "boh4": 1.28
+      },
+      "worst_relative_percent": 1.53
+    },
+    {
+      "alkalinity_umol_per_kg": 1500,
+      "dic_over_alkalinity": 0.88,
+      "initial_ph": 7.932,
+      "alkalinity_sd": 12.13,
+      "species_sd_umol_per_kg": {
+        "hco3": 10.82,
+        "co3": 2.52,
+        "boh4": 1.48
+      },
+      "worst_relative_percent": 2.27
+    },
+    {
+      "alkalinity_umol_per_kg": 1500,
+      "dic_over_alkalinity": 0.95,
+      "initial_ph": 7.602,
+      "alkalinity_sd": 12.2,
+      "species_sd_umol_per_kg": {
+        "hco3": 11.82,
+        "co3": 2.28,
+        "boh4": 1.44
+      },
+      "worst_relative_percent": 3.93
+    },
+    {
+      "alkalinity_umol_per_kg": 2300,
+      "dic_over_alkalinity": 0.8,
+      "initial_ph": 8.287,
+      "alkalinity_sd": 18.37,
+      "species_sd_umol_per_kg": {
+        "hco3": 13.12,
+        "co3": 4.43,
+        "boh4": 1.27
+      },
+      "worst_relative_percent": 1.4
+    },
+    {
+      "alkalinity_umol_per_kg": 2300,
+      "dic_over_alkalinity": 0.88,
+      "initial_ph": 8.004,
+      "alkalinity_sd": 18.42,
+      "species_sd_umol_per_kg": {
+        "hco3": 16.17,
+        "co3": 4.11,
+        "boh4": 1.51
+      },
+      "worst_relative_percent": 2.08
+    },
+    {
+      "alkalinity_umol_per_kg": 2300,
+      "dic_over_alkalinity": 0.95,
+      "initial_ph": 7.658,
+      "alkalinity_sd": 18.51,
+      "species_sd_umol_per_kg": {
+        "hco3": 17.78,
+        "co3": 3.69,
+        "boh4": 1.49
+      },
+      "worst_relative_percent": 3.65
+    },
+    {
+      "alkalinity_umol_per_kg": 3200,
+      "dic_over_alkalinity": 0.8,
+      "initial_ph": 8.337,
+      "alkalinity_sd": 25.42,
+      "species_sd_umol_per_kg": {
+        "hco3": 17.92,
+        "co3": 6.38,
+        "boh4": 1.25
+      },
+      "worst_relative_percent": 1.31
+    },
+    {
+      "alkalinity_umol_per_kg": 3200,
+      "dic_over_alkalinity": 0.88,
+      "initial_ph": 8.048,
+      "alkalinity_sd": 25.49,
+      "species_sd_umol_per_kg": {
+        "hco3": 22.21,
+        "co3": 5.92,
+        "boh4": 1.53
+      },
+      "worst_relative_percent": 1.96
+    },
+    {
+      "alkalinity_umol_per_kg": 3200,
+      "dic_over_alkalinity": 0.95,
+      "initial_ph": 7.692,
+      "alkalinity_sd": 25.61,
+      "species_sd_umol_per_kg": {
+        "hco3": 24.5,
+        "co3": 5.3,
+        "boh4": 1.51
+      },
+      "worst_relative_percent": 3.49
+    },
+    {
+      "alkalinity_umol_per_kg": 4000,
+      "dic_over_alkalinity": 0.8,
+      "initial_ph": 8.365,
+      "alkalinity_sd": 31.69,
+      "species_sd_umol_per_kg": {
+        "hco3": 22.19,
+        "co3": 8.09,
+        "boh4": 1.24
+      },
+      "worst_relative_percent": 1.26
+    },
+    {
+      "alkalinity_umol_per_kg": 4000,
+      "dic_over_alkalinity": 0.88,
+      "initial_ph": 8.072,
+      "alkalinity_sd": 31.77,
+      "species_sd_umol_per_kg": {
+        "hco3": 27.58,
+        "co3": 7.53,
+        "boh4": 1.54
+      },
+      "worst_relative_percent": 1.9
+    },
+    {
+      "alkalinity_umol_per_kg": 4000,
+      "dic_over_alkalinity": 0.95,
+      "initial_ph": 7.711,
+      "alkalinity_sd": 31.92,
+      "species_sd_umol_per_kg": {
+        "hco3": 30.47,
+        "co3": 6.72,
+        "boh4": 1.53
+      },
+      "worst_relative_percent": 3.4
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "provenance": {
+    "package_version": "1.0.0",
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "tensorflow": "2.21.0",
+    "command": "scripts/compare_organic.py --model results/seed42/autoencoder_best.keras --normalizer results/seed42/autoencoder_normalizer.npz --dataset data/dataset_hobbyist.npz --control data/dataset_hobbyist_control.npz --split-seed 42 --n-eval 600 --classical-chunk-size 50 --output results/organic_comparison.json",
+    "model": "results\\seed42\\autoencoder_best.keras",
+    "split_seed": 42,
+    "n_eval": 600,
+    "dataset": {
+      "package_version": "1.0.0",
+      "python": "3.12.10",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "numpy": "2.5.2",
+      "instrument": "hobbyist",
+      "seed": 42,
+      "n_samples": 16000,
+      "n_points": 200,
+      "add_noise": true,
+      "organic_probability": 0.5,
+      "n_failed": 0,
+      "chunk_size": 500,
+      "n_chunks": 32,
+      "command": "scripts/generate_dataset.py --instrument hobbyist --seed 42 --n-samples 16000 --chunk-size 500 --output data/dataset_hobbyist.npz --max-chunks-per-run 1"
+    },
+    "control": {
+      "package_version": "1.0.0",
+      "python": "3.12.10",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "numpy": "2.5.2",
+      "instrument": "hobbyist",
+      "seed": 43,
+      "n_samples": 4000,
+      "n_points": 200,
+      "add_noise": true,
+      "organic_probability": 0.0,
+      "n_failed": 0,
+      "chunk_size": 250,
+      "n_chunks": 16,
+      "command": "scripts/generate_dataset.py --instrument hobbyist --organic-probability 0.0 --seed 43 --n-samples 4000 --chunk-size 250 --output data/dataset_hobbyist_control.npz --max-chunks-per-run 1"
+    },
+    "latent_names": [
+      "alkalinity",
+      "alk_minus_dic",
+      "total_organic",
+      "pk_organic",
+      "offset",
+      "slope",
+      "pump_scale"
+    ]
+  },
+  "groups": {
+    "control_organic_free": {
+      "n_curves": 600,
+      "n_dropped": 0,
+      "ms_per_curve": {
+        "network": 5.9755,
+        "classical": 1639.71
+      },
+      "organic_umol_per_kg": {
+        "mean": 0.0,
+        "max": 0.0,
+        "fraction_present": 0.0
+      },
+      "predicted_organic_umol_per_kg": {
+        "mean": 32.39,
+        "sd": 14.01,
+        "min": 7.13,
+        "max": 114.19,
+        "true_mean": 0.0
+      },
+      "hco3": {
+        "network": {
+          "n": 600,
+          "bias": -26.093,
+          "sd": 37.934,
+          "mae": 35.678,
+          "max_abs": 222.343
+        },
+        "classical": {
+          "n": 600,
+          "bias": 9.752,
+          "sd": 23.356,
+          "mae": 19.266,
+          "max_abs": 84.527
+        }
+      },
+      "co3": {
+        "network": {
+          "n": 600,
+          "bias": -1.968,
+          "sd": 15.691,
+          "mae": 11.1,
+          "max_abs": 118.453
+        },
+        "classical": {
+          "n": 600,
+          "bias": -2.71,
+          "sd": 8.017,
+          "mae": 6.254,
+          "max_abs": 37.626
+        }
+      },
+      "boh4": {
+        "network": {
+          "n": 600,
+          "bias": 0.42,
+          "sd": 7.293,
+          "mae": 5.691,
+          "max_abs": 27.518
+        },
+        "classical": {
+          "n": 600,
+          "bias": -0.682,
+          "sd": 6.669,
+          "mae": 5.32,
+          "max_abs": 22.673
+        }
+      },
+      "alkalinity": {
+        "network": {
+          "n": 600,
+          "bias": 0.09,
+          "sd": 34.17,
+          "mae": 23.32,
+          "max_abs": 329.461
+        },
+        "classical": {
+          "n": 600,
+          "bias": 0.974,
+          "sd": 27.657,
+          "mae": 20.92,
+          "max_abs": 108.205
+        }
+      }
+    },
+    "mixed_organic_present": {
+      "n_curves": 600,
+      "n_dropped": 0,
+      "ms_per_curve": {
+        "network": 0.8546,
+        "classical": 1569.08
+      },
+      "organic_umol_per_kg": {
+        "mean": 36.99,
+        "max": 149.65,
+        "fraction_present": 0.522
+      },
+      "predicted_organic_umol_per_kg": {
+        "mean": 39.86,
+        "sd": 25.5,
+        "min": 7.31,
+        "max": 158.26,
+        "true_mean": 36.99
+      },
+      "hco3": {
+        "network": {
+          "n": 600,
+          "bias": -4.891,
+          "sd": 53.739,
+          "mae": 41.265,
+          "max_abs": 253.996,
+          "corr_with_organic": 0.5112,
+          "slope_per_umol_organic": 0.58
+        },
+        "classical": {
+          "n": 600,
+          "bias": 34.872,
+          "sd": 43.826,
+          "mae": 40.613,
+          "max_abs": 195.414,
+          "corr_with_organic": 0.721,
+          "slope_per_umol_organic": 0.6672
+        }
+      },
+      "co3": {
+        "network": {
+          "n": 600,
+          "bias": 0.841,
+          "sd": 16.538,
+          "mae": 11.967,
+          "max_abs": 91.26,
+          "corr_with_organic": 0.147,
+          "slope_per_umol_organic": 0.0513
+        },
+        "classical": {
+          "n": 600,
+          "bias": 0.152,
+          "sd": 10.012,
+          "mae": 7.364,
+          "max_abs": 37.459,
+          "corr_with_organic": 0.3738,
+          "slope_per_umol_organic": 0.079
+        }
+      },
+      "boh4": {
+        "network": {
+          "n": 600,
+          "bias": 0.492,
+          "sd": 7.442,
+          "mae": 5.904,
+          "max_abs": 25.111,
+          "corr_with_organic": -0.0111,
+          "slope_per_umol_organic": -0.0017
+        },
+        "classical": {
+          "n": 600,
+          "bias": -0.557,
+          "sd": 7.075,
+          "mae": 5.575,
+          "max_abs": 23.155,
+          "corr_with_organic": 0.0175,
+          "slope_per_umol_organic": 0.0026
+        }
+      },
+      "alkalinity": {
+        "network": {
+          "n": 600,
+          "bias": -1.915,
+          "sd": 34.512,
+          "mae": 23.787,
+          "max_abs": 370.16,
+          "corr_with_organic": -0.0895,
+          "slope_per_umol_organic": -0.0652
+        },
+        "classical": {
+          "n": 600,
+          "bias": -4.305,
+          "sd": 30.271,
+          "mae": 23.35,
+          "max_abs": 99.002,
+          "corr_with_organic": -0.235,
+          "slope_per_umol_organic": -0.1502
+        }
+      }
+    },
+    "mixed_organic_only": {
+      "n_curves": 313,
+      "n_dropped": 0,
+      "ms_per_curve": {
+        "network": 0.9353,
+        "classical": 1581.92
+      },
+      "organic_umol_per_kg": {
+        "mean": 70.92,
+        "max": 149.65,
+        "fraction_present": 1.0
+      },
+      "predicted_organic_umol_per_kg": {
+        "mean": 46.77,
+        "sd": 30.82,
+        "min": 13.12,
+        "max": 158.26,
+        "true_mean": 70.92
+      },
+      "hco3": {
+        "network": {
+          "n": 313,
+          "bias": 16.919,
+          "sd": 53.486,
+          "mae": 43.112,
+          "max_abs": 253.996,
+          "corr_with_organic": 0.4069,
+          "slope_per_umol_organic": 0.5001
+        },
+        "classical": {
+          "n": 313,
+          "bias": 57.683,
+          "sd": 44.553,
+          "mae": 59.288,
+          "max_abs": 195.414,
+          "corr_with_organic": 0.6452,
+          "slope_per_umol_organic": 0.6606
+        }
+      },
+      "co3": {
+        "network": {
+          "n": 313,
+          "bias": 2.554,
+          "sd": 15.968,
+          "mae": 11.985,
+          "max_abs": 79.954,
+          "corr_with_organic": 0.1428,
+          "slope_per_umol_organic": 0.0524
+        },
+        "classical": {
+          "n": 313,
+          "bias": 3.098,
+          "sd": 10.899,
+          "mae": 8.502,
+          "max_abs": 37.459,
+          "corr_with_organic": 0.2759,
+          "slope_per_umol_organic": 0.0691
+        }
+      },
+      "boh4": {
+        "network": {
+          "n": 313,
+          "bias": 0.097,
+          "sd": 7.584,
+          "mae": 5.953,
+          "max_abs": 25.111,
+          "corr_with_organic": 0.062,
+          "slope_per_umol_organic": 0.0108
+        },
+        "classical": {
+          "n": 313,
+          "bias": -0.735,
+          "sd": 7.303,
+          "mae": 5.751,
+          "max_abs": 22.647,
+          "corr_with_organic": 0.0752,
+          "slope_per_umol_organic": 0.0126
+        }
+      },
+      "alkalinity": {
+        "network": {
+          "n": 313,
+          "bias": -3.296,
+          "sd": 31.881,
+          "mae": 23.291,
+          "max_abs": 133.827,
+          "corr_with_organic": -0.1315,
+          "slope_per_umol_organic": -0.0963
+        },
+        "classical": {
+          "n": 313,
+          "bias": -8.806,
+          "sd": 31.953,
+          "mae": 25.584,
+          "max_abs": 99.002,
+          "corr_with_organic": -0.235,
+          "slope_per_umol_organic": -0.1725
+        }
+      }
+    }
+  }
+}

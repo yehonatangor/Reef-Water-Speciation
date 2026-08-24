@@ -1,0 +1,226 @@
+[
+  {
+    "state": "S=35 T=25 A=2300 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8472,
+    "cosines": {
+      "alkalinity|dic": -0.9888,
+      "alkalinity|total_organic": -0.9815,
+      "alkalinity|pk_organic": 0.3371,
+      "dic|total_organic": 0.9938,
+      "dic|pk_organic": -0.3514,
+      "total_organic|pk_organic": -0.4491
+    },
+    "gram_condition_number": 5932.910690214111,
+    "organic_explained_by_carbonate": 0.9876,
+    "pk_explained_by_carbonate": 0.12822
+  },
+  {
+    "state": "S=20 T=25 A=2300 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.9254,
+    "cosines": {
+      "alkalinity|dic": -0.9907,
+      "alkalinity|total_organic": -0.982,
+      "alkalinity|pk_organic": 0.2819,
+      "dic|total_organic": 0.992,
+      "dic|pk_organic": -0.2926,
+      "total_organic|pk_organic": -0.4047
+    },
+    "gram_condition_number": 3777.886512197093,
+    "organic_explained_by_carbonate": 0.98412,
+    "pk_explained_by_carbonate": 0.08904
+  },
+  {
+    "state": "S=30 T=25 A=2300 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8675,
+    "cosines": {
+      "alkalinity|dic": -0.9894,
+      "alkalinity|total_organic": -0.9819,
+      "alkalinity|pk_organic": 0.3209,
+      "dic|total_organic": 0.9933,
+      "dic|pk_organic": -0.3341,
+      "total_organic|pk_organic": -0.4354
+    },
+    "gram_condition_number": 5238.342425566211,
+    "organic_explained_by_carbonate": 0.98679,
+    "pk_explained_by_carbonate": 0.11597
+  },
+  {
+    "state": "S=40 T=25 A=2300 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8326,
+    "cosines": {
+      "alkalinity|dic": -0.9881,
+      "alkalinity|total_organic": -0.981,
+      "alkalinity|pk_organic": 0.3507,
+      "dic|total_organic": 0.994,
+      "dic|pk_organic": -0.366,
+      "total_organic|pk_organic": -0.4615
+    },
+    "gram_condition_number": 6523.593754410635,
+    "organic_explained_by_carbonate": 0.98806,
+    "pk_explained_by_carbonate": 0.13907
+  },
+  {
+    "state": "S=35 T=10 A=2300 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.9933,
+    "cosines": {
+      "alkalinity|dic": -0.99,
+      "alkalinity|total_organic": -0.978,
+      "alkalinity|pk_organic": 0.2606,
+      "dic|total_organic": 0.9889,
+      "dic|pk_organic": -0.2718,
+      "total_organic|pk_organic": -0.4045
+    },
+    "gram_condition_number": 2801.445351377021,
+    "organic_explained_by_carbonate": 0.97798,
+    "pk_explained_by_carbonate": 0.07746
+  },
+  {
+    "state": "S=35 T=18 A=2300 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.9103,
+    "cosines": {
+      "alkalinity|dic": -0.9894,
+      "alkalinity|total_organic": -0.9803,
+      "alkalinity|pk_organic": 0.3014,
+      "dic|total_organic": 0.9919,
+      "dic|pk_organic": -0.3143,
+      "total_organic|pk_organic": -0.427
+    },
+    "gram_condition_number": 4265.323322335078,
+    "organic_explained_by_carbonate": 0.98385,
+    "pk_explained_by_carbonate": 0.10304
+  },
+  {
+    "state": "S=35 T=32 A=2300 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.7922,
+    "cosines": {
+      "alkalinity|dic": -0.988,
+      "alkalinity|total_organic": -0.9822,
+      "alkalinity|pk_organic": 0.3721,
+      "dic|total_organic": 0.9952,
+      "dic|pk_organic": -0.3878,
+      "total_organic|pk_organic": -0.4726
+    },
+    "gram_condition_number": 7906.560746772912,
+    "organic_explained_by_carbonate": 0.99039,
+    "pk_explained_by_carbonate": 0.15557
+  },
+  {
+    "state": "S=35 T=25 A=1600 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8472,
+    "cosines": {
+      "alkalinity|dic": -0.9876,
+      "alkalinity|total_organic": -0.9801,
+      "alkalinity|pk_organic": 0.3527,
+      "dic|total_organic": 0.9936,
+      "dic|pk_organic": -0.3693,
+      "total_organic|pk_organic": -0.4678
+    },
+    "gram_condition_number": 7215.6929198343405,
+    "organic_explained_by_carbonate": 0.98738,
+    "pk_explained_by_carbonate": 0.1422
+  },
+  {
+    "state": "S=35 T=25 A=3200 C/A=0.87 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8472,
+    "cosines": {
+      "alkalinity|dic": -0.9896,
+      "alkalinity|total_organic": -0.9825,
+      "alkalinity|pk_organic": 0.3268,
+      "dic|total_organic": 0.9938,
+      "dic|pk_organic": -0.3392,
+      "total_organic|pk_organic": -0.4365
+    },
+    "gram_condition_number": 5070.256020759821,
+    "organic_explained_by_carbonate": 0.98766,
+    "pk_explained_by_carbonate": 0.11887
+  },
+  {
+    "state": "S=35 T=25 A=2300 C/A=0.80 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8472,
+    "cosines": {
+      "alkalinity|dic": -0.9891,
+      "alkalinity|total_organic": -0.9813,
+      "alkalinity|pk_organic": 0.3202,
+      "dic|total_organic": 0.9935,
+      "dic|pk_organic": -0.335,
+      "total_organic|pk_organic": -0.4328
+    },
+    "gram_condition_number": 3583.971551140795,
+    "organic_explained_by_carbonate": 0.98713,
+    "pk_explained_by_carbonate": 0.11797
+  },
+  {
+    "state": "S=35 T=25 A=2300 C/A=0.95 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8472,
+    "cosines": {
+      "alkalinity|dic": -0.9851,
+      "alkalinity|total_organic": -0.9771,
+      "alkalinity|pk_organic": 0.3906,
+      "dic|total_organic": 0.993,
+      "dic|pk_organic": -0.407,
+      "total_organic|pk_organic": -0.5097
+    },
+    "gram_condition_number": 10871.37106902735,
+    "organic_explained_by_carbonate": 0.986,
+    "pk_explained_by_carbonate": 0.1693
+  },
+  {
+    "state": "S=35 T=25 A=2300 C/A=0.87 org=15",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8472,
+    "cosines": {
+      "alkalinity|dic": -0.9887,
+      "alkalinity|total_organic": -0.9808,
+      "alkalinity|pk_organic": 0.3263,
+      "dic|total_organic": 0.9936,
+      "dic|pk_organic": -0.3439,
+      "total_organic|pk_organic": -0.4424
+    },
+    "gram_condition_number": 4700.024437514499,
+    "organic_explained_by_carbonate": 0.98736,
+    "pk_explained_by_carbonate": 0.12667
+  },
+  {
+    "state": "S=35 T=25 A=2300 C/A=0.87 org=150",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 5.8472,
+    "cosines": {
+      "alkalinity|dic": -0.9885,
+      "alkalinity|total_organic": -0.9818,
+      "alkalinity|pk_organic": 0.3548,
+      "dic|total_organic": 0.9938,
+      "dic|pk_organic": -0.3654,
+      "total_organic|pk_organic": -0.4628
+    },
+    "gram_condition_number": 17609.748686462914,
+    "organic_explained_by_carbonate": 0.98768,
+    "pk_explained_by_carbonate": 0.13529
+  },
+  {
+    "state": "S=20 T=10 A=1600 C/A=0.85 org=75",
+    "pk_organic": 5.5,
+    "carbonic_pk1_total": 6.0715,
+    "cosines": {
+      "alkalinity|dic": -0.9913,
+      "alkalinity|total_organic": -0.9777,
+      "alkalinity|pk_organic": 0.2217,
+      "dic|total_organic": 0.987,
+      "dic|pk_organic": -0.2303,
+      "total_organic|pk_organic": -0.3742
+    },
+    "gram_condition_number": 1998.0064818578971,
+    "organic_explained_by_carbonate": 0.97423,
+    "pk_explained_by_carbonate": 0.05549
+  }
+]
