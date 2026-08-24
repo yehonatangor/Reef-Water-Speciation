@@ -197,7 +197,8 @@ def write_payload(
         },
         "groups": groups,
     }
-    # Write to a temporary file and replace, so that a crash during the write cannot leave a half-finished file.
+    # Write to a temporary file and replace, so that a crash during the write
+    # cannot leave a half-finished file.
     temporary = args.output.with_suffix(".tmp")
     temporary.write_text(json.dumps(payload, indent=2))
     temporary.replace(args.output)
@@ -646,7 +647,8 @@ def build_groups(
         )
         return []
 
-    # The same split seed as training, or the "held-out" curves are not held out and every number below is optimistic.
+    # The same split seed as training, or the "held-out" curves are not held
+    # out and every number below is optimistic.
     _, _, test = split_dataset(data, seed=args.split_seed)
     take = min(args.n_eval, len(test["curves"]))
     mixed = {k: v[:take] for k, v in test.items()}
@@ -776,7 +778,8 @@ def main(argv: list[str] | None = None) -> int:
 
     forwarded = [a for a in (argv if argv is not None else sys.argv[1:])
                  if not a.startswith("--phase")]
-    # One chunk per subprocess, overriding whatever was passed: the point of the loop is that each chunk gets a fresh interpreter.
+    # One chunk per subprocess, overriding whatever was passed: the point of
+    # the loop is that each chunk gets a fresh interpreter.
     command = [sys.executable, str(Path(__file__).resolve()), "--phase",
                "classical", *forwarded, "--max-chunks-per-run", "1"]
 
