@@ -150,4 +150,6 @@ Recovering organic content is bounded by the chemistry rather than by the model:
 
 ## Licence
 
+MIT — see [`LICENSE`](LICENSE).
+
 

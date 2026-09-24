@@ -8,8 +8,8 @@ version = "1.0.0"
 description = "Validated seawater carbonate chemistry, titration modelling and speciation inference for reef water"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "" }
-authors = [{ name = "Reef Water Cleanup project" }]
+license = { text = "MIT" }
+authors = [{ name = "Yehonatan Gor" }]
 keywords = [
     "oceanography",
     "carbonate system",
